@@ -51,3 +51,7 @@
  - `dialogs` — раздел с классами, реализующими диалоговые окна в мобильном приложении;
  - `fragments` — раздел с разделами главного меню приложения: новый маршрут (класс `NewRouteFragment`), история маршрутов (класс `RouteHistoryFragment`) и настройки аккаунта (класс `AccountFragment`);
  - `utils` — раздел со вспомогательными классами проекта.
+
+## Запуск приложения. Вход в аккаунт 
+
+![Запуск приложения](https://drive.google.com/file/d/1ZwVHRyI4KL6xAXpjPluDcKagUyZ0NnGo/view?usp=sharing)

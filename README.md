@@ -54,4 +54,4 @@
 
 ## Запуск приложения. Вход в аккаунт 
 
-![Запуск приложения и вход в аккаунт](https://github.com/Tvorozh0k/diploma-project/blob/main/images/image_1.png?raw=true)
+![Запуск приложения и вход в аккаунт](https://github.com/Tvorozh0k/diploma-project/blob/main/images/image_1.png?raw=true | height=500)

@@ -55,3 +55,4 @@
 ## Запуск приложения. Вход в аккаунт 
 
 ![Запуск приложения](https://drive.google.com/file/d/1ZwVHRyI4KL6xAXpjPluDcKagUyZ0NnGo/view?usp=sharing)
+![alt text](https://github.com/Tvorozh0k/Crocodiles/blob/master/ExampleWork.png?raw=true)

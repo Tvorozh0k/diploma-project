@@ -216,73 +216,6 @@ public class KOptSolver extends TSPSolver {
      * Алгоритм 3-opt (возможны 8 случаев)
      */
     private boolean threeOpt() {
-        /*
-        for (int i = 0; i < nVertices - 4; ++i) {
-            for (int j = i + 2; j < nVertices - 2; ++j) {
-                for (int k = j + 2; k < nVertices - ((i == 0) ? 1 : 0); ++k) {
-                    // массив, задающий все случаи
-                    int[][] routePositions = {
-                            {0, i, j, i + 1, k, j + 1, k + 1, nVertices},
-                            {0, i, j + 1, k, i + 1, j, k + 1, nVertices},
-                            {0, i, k, j + 1, i + 1, j, k + 1, nVertices},
-                            {0, i, j + 1, k, j, i + 1, k + 1, nVertices}
-                    };
-
-                    for (int l = 0; l < 4; ++l) {
-                        double newLen1 = 0;
-                        double newLen2 = 0;
-
-                        // подсчет длины первого пути
-                        for (int m = 0; m < 7; ++m) {
-                            int u = routePositions[l][m];
-                            int v = routePositions[l][m + 1];
-
-                            if (m % 2 == 0) {
-                                newLen1 += (u < v) ? pref[v] - pref[u] : suf[v] - suf[u];
-                            } else {
-                                newLen1 += adjMat[solution.get(u)][solution.get(v)];
-                            }
-                        }
-
-                        // подсчет длины второго пути
-                        for (int m = 7; m > 0; --m) {
-                            int u = routePositions[l][m];
-                            int v = routePositions[l][m - 1];
-
-                            if (m % 2 == 1) {
-                                newLen2 += (u < v) ? pref[v] - pref[u] : suf[v] - suf[u];
-                            } else {
-                                newLen2 += adjMat[solution.get(u)][solution.get(v)];
-                            }
-                        }
-
-                        if (Math.min(newLen1, newLen2) < len) {
-                            if (l % 2 == 0) {
-                                Collections.reverse(solution.subList(j + 1, k + 1));
-                            }
-
-                            if (l % 3 == 0) {
-                                Collections.reverse(solution.subList(i + 1, j + 1));
-                            }
-
-                            if (l != 0) {
-                                Collections.rotate(solution.subList(i + 1, k + 1), i - j);
-                            }
-
-                            if (newLen1 <= newLen2) {
-                                len = newLen1;
-                            } else {
-                                Collections.reverse(solution.subList(1, nVertices));
-                                len = newLen2;
-                            }
-
-                            return true;
-                        }
-                    }
-                }
-            }
-        }*/
-
         for (int i = 0; i < nVertices - 2; ++i)
             for (int j = i + 1; j < nVertices - 1; ++j)
                 for (int k = j + 1; k < nVertices; ++k)
@@ -340,8 +273,8 @@ public class KOptSolver extends TSPSolver {
 
             switch (type) {
                 case "2-opt" -> isImproved = twoOpt();
-                case "2.5-opt" -> isImproved = twoHalfOpt() || twoOpt();
-                case "3-opt" -> isImproved = threeOpt(); // || twoHalfOpt() || twoOpt();
+                case "2.5-opt" -> isImproved = twoHalfOpt();
+                case "3-opt" -> isImproved = threeOpt();
             }
         }
     }

@@ -29,27 +29,4 @@ public class DeliveryPointController {
     public ResponseEntity<List<DeliveryPoint>> getAll() {
         return new ResponseEntity<>(deliveryPointRepository.findAll(), HttpStatus.OK);
     }
-
-    @GetMapping("/get/{id}")
-    public ResponseEntity<DeliveryPoint> getDeliveryPointById(@PathVariable(value = "id") int id) {
-        return new ResponseEntity<>(deliveryPointRepository.findById(id).orElse(new DeliveryPoint()), HttpStatus.OK);
-    }
-
-    @PutMapping("/update")
-    public ResponseEntity<?> updateDeliveryPoint(@RequestBody DeliveryPoint deliveryPointInfo) {
-        DeliveryPoint deliveryPoint = deliveryPointRepository.findById(deliveryPointInfo.getId()).orElse(null);
-
-        if (deliveryPoint == null) {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
-
-        deliveryPoint.setName(deliveryPointInfo.getName());
-        deliveryPoint.setAddress(deliveryPointInfo.getAddress());
-        deliveryPoint.setPhoneNumber(deliveryPointInfo.getPhoneNumber());
-        deliveryPoint.setLatitude(deliveryPointInfo.getLatitude());
-        deliveryPoint.setLongitude(deliveryPointInfo.getLongitude());
-
-        deliveryPointRepository.save(deliveryPoint);
-        return new ResponseEntity<>(HttpStatus.OK);
-    }
 }

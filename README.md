@@ -55,3 +55,5 @@
 ## Запуск приложения. Вход в аккаунт 
 
 ![Запуск приложения и вход в аккаунт](https://github.com/Tvorozh0k/diploma-project/blob/main/images/image_1.png?raw=true | height=500)
+
+![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png | width=100)

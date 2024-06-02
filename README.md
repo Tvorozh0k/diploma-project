@@ -62,7 +62,7 @@
 ## Настройки аккаунта
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Tvorozh0k/diploma-project/main/images/image_2.png" height="400" />
+  <img src="https://raw.githubusercontent.com/Tvorozh0k/diploma-project/main/images/image_2.png" border="1" height="400" width="1000" object-fit="cover" />
 </p>
 <center>
 

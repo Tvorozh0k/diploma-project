@@ -58,3 +58,10 @@
   <img src="https://raw.githubusercontent.com/Tvorozh0k/diploma-project/main/images/image_1.png" height="400" />
 </p>
 <center>
+
+## Настройки аккаунта
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Tvorozh0k/diploma-project/main/images/image_2.png" height="400" />
+</p>
+<center>

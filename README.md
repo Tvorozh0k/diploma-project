@@ -65,3 +65,17 @@
   <img src="https://raw.githubusercontent.com/Tvorozh0k/diploma-project/main/images/image_2.png" height="400" />
 </p>
 <center>
+
+## Создание нового маршрута
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Tvorozh0k/diploma-project/main/images/image_2.png" height="400" />
+</p>
+<center>
+
+## История маршрутов пользователя
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Tvorozh0k/diploma-project/main/images/image_2.png" height="400" />
+</p>
+<center>

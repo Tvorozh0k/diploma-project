@@ -96,9 +96,4 @@ public class AccountController {
 
         return new ResponseEntity<>(responseBody, HttpStatus.OK);
     }
-
-    @GetMapping("/get")
-    public ResponseEntity<List<Account>> getAccounts() {
-        return new ResponseEntity<>(accountRepository.findAll(), HttpStatus.OK);
-    }
 }

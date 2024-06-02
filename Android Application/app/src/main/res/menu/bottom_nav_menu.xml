@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/newRoute"
+        android:title="Новый маршрут"
+        android:icon="@drawable/route_grey"/>
+    <item
+        android:id="@+id/history"
+        android:title="История"
+        android:icon="@drawable/history_grey"/>
+    <item
+        android:id="@+id/account"
+        android:title="Аккаунт"
+        android:icon="@drawable/user_grey"/>
+</menu>

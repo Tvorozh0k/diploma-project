@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="@color/white"
+    android:id="@+id/final_item">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/card_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_background">
+
+        <ImageView
+            android:id="@+id/finish_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintStart_toStartOf="@id/card_layout"
+            app:layout_constraintTop_toTopOf="@id/card_layout"
+            android:src="@drawable/finish"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="39dp"/>
+
+        <View
+            android:id="@+id/vline"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/finish_image"
+            app:layout_constraintStart_toStartOf="@id/finish_image"
+            app:layout_constraintEnd_toEndOf="@id/finish_image"
+            android:background="@drawable/rectangle_grey"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/finish_image"
+            app:layout_constraintBottom_toBottomOf="@id/finish_image"
+            app:layout_constraintStart_toEndOf="@id/finish_image"
+            android:layout_marginStart="24dp"
+            android:text="«Сокур-63»"
+            android:textIsSelectable="true"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="250dp"
+            app:layout_constraintTop_toBottomOf="@id/name"
+            app:layout_constraintStart_toEndOf="@id/finish_image"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="italic"
+            android:textIsSelectable="true"
+            android:text="г. Саратов, Сокурский тракт, 1-й километр"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="250dp"
+            app:layout_constraintStart_toEndOf="@id/finish_image"
+            app:layout_constraintTop_toBottomOf="@id/address"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="15dp"
+            android:paddingBottom="15dp"
+            android:textStyle="bold"
+            android:drawablePadding="5dp"
+            android:textIsSelectable="true"
+            android:text="8 (452) 62-47-93"
+            android:textSize="14sp"
+            app:drawableLeftCompat="@drawable/icon_orange_call" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

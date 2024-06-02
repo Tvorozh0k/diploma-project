@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/consLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="@drawable/item_background">
+
+        <CheckBox
+            android:id="@+id/chooseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:buttonTint="@color/orange"
+            app:layout_constraintStart_toStartOf="@id/consLayout"
+            app:layout_constraintTop_toTopOf="@id/consLayout"
+            app:layout_constraintBottom_toBottomOf="@id/consLayout"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="250dp"
+            android:text="«Ozon, склад»"
+            android:textIsSelectable="true"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            app:layout_constraintTop_toTopOf="@id/consLayout"
+            app:layout_constraintStart_toEndOf="@id/chooseButton"/>
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="300dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="italic"
+            android:text="Трофимовская улица, 30с1, Саратов, Саратовская обл., 410062"
+            android:textIsSelectable="true"
+            app:layout_constraintTop_toBottomOf="@id/name"
+            app:layout_constraintStart_toEndOf="@id/chooseButton" />
+
+        <TextView
+            android:id="@+id/phoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="250dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:drawablePadding="10dp"
+            android:text="+7 (845) 265-35-33"
+            android:textIsSelectable="true"
+            android:textSize="14sp"
+            app:drawableLeftCompat="@drawable/icon_orange_call"
+            app:layout_constraintStart_toEndOf="@id/chooseButton"
+            app:layout_constraintTop_toBottomOf="@id/address"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

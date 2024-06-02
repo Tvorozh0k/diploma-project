@@ -43,9 +43,4 @@ public class UserController {
 
         return new ResponseEntity<>(HttpStatus.OK);
     }
-
-    @GetMapping("/get")
-    public ResponseEntity<List<User>> getUsers() {
-        return new ResponseEntity<>(userRepository.findAll(), HttpStatus.OK);
-    }
 }

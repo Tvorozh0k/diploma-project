@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MyMapTestApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.MyMapTestApp" parent="Base.Theme.MyMapTestApp">
+        <item name="android:textColorHighlight">#80FFD299</item>
+        <item name="android:colorControlActivated">@color/orange</item>
+    </style>
+
+    <style name="BottomNavigationView" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="BottomNavigationView.Active" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="GreyNegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="RedPositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="LogoutDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:buttonBarNegativeButtonStyle">@style/GreyNegativeButtonStyle</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/RedPositiveButtonStyle</item>
+    </style>
+
+    <style name="RadioButtonTheme" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="colorControlActivated">@color/orange</item>
+        <item name="colorControlNormal">@color/orange_2</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+</resources>

@@ -54,6 +54,7 @@
 
 ## Запуск приложения. Вход в аккаунт 
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Tvorozh0k/diploma-project/main/images/image_1.png" height="400" />
+</p>
 <center>
- <img src="https://raw.githubusercontent.com/Tvorozh0k/diploma-project/main/images/image_1.png" height="400" />
-</center>

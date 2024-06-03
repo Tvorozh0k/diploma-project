@@ -25,13 +25,17 @@ public class TspController {
         String option = info.option();
 
         if (option.equals("auto")) {
-            if (graph.length <= 15) {
+            if (graph.length <= 16) {
                 option = "held_karp";
             } else if (graph.length > 50) {
                 option = "ant_algorithm";
             } else {
                 option = "ant_opt_algorithm";
             }
+        }
+
+        if (option.equals("held_karp") && graph.length > 16) {
+            option = "error";
         }
 
         NNSolver alg1 = new NNSolver();
@@ -86,7 +90,7 @@ public class TspController {
             return new ResponseEntity<>(result, HttpStatus.OK);
 
         } else {
-            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(new RequestError(HttpStatus.BAD_REQUEST.value(), String.format("Превышено максимальное кол-во точек в запросе. Максимальное число: 16, в запросе: %d", graph.length)), HttpStatus.BAD_REQUEST);
         }
     }
 }

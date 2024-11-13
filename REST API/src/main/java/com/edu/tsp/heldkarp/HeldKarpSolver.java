@@ -12,7 +12,6 @@ import java.util.Collections;
  * алгоритмом динамического программирования
  */
 public class HeldKarpSolver extends TSPSolver {
-
     /**
      * dp[i][j] = длина кратчайшего пути из
      * вершины (n - 1) до вершины j, проходящего
